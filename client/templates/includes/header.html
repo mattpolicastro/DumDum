@@ -1,0 +1,13 @@
+<template name="header">
+	<header>
+		<nav class="container">
+			<ul>
+				<li id="title"><a href="{{pathFor 'postsList'}}">Matt Policastro</a></li>
+				{{#if currentUser}}<li><a href="{{pathFor 'create'}}">Create</a></li>{{/if}}
+				<!--<li><a href="{{pathFor 'landing'}}"><h6>Posts</h6></a></li>
+				<li><a href="{{pathFor 'landing'}}">Work</a></li>-->
+				<li><a href="{{pathFor 'latestBio'}}">About</a></li>
+			</ul>
+		</nav>
+	</header>
+</template>

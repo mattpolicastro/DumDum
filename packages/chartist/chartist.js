@@ -1,0 +1,1 @@
+Chartist = Npm.require('chartist');

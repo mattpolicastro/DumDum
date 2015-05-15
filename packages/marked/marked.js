@@ -1,0 +1,1 @@
+marked = Npm.require('marked');

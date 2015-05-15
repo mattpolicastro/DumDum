@@ -1,0 +1,19 @@
+<template name="postPage">
+	<div class="post yield">
+		<div class="container {{type}}">
+			<div id="lede" class="main">
+				<h1>{{title}}</h1>
+				<p>{{niceDate}}</p>
+			</div>
+			<article class="main writing">
+				{{#markdown}}{{content}}{{/markdown}}
+				{{#each datas}}
+					<canvas id="{{id}}"></canvas>
+					<p>{{text}}</p>
+				{{/each}}
+				
+				<!--<a href="{{pathFor 'postsList'}}" id="back"><h6>Back to posts.</h6></a>-->
+			</article>		
+		</div>
+	</div>
+</template>

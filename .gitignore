@@ -1,0 +1,15 @@
+# Settings and config files
+settings.json
+mup.json
+dumdum.com.conf
+
+# Testing fixtures
+server/*_fixtures.js
+
+# Hidden folders - styles, npm, etc.
+client/stylesheets/.sass-cache
+client/stylesheets/css
+packages/*/.npm
+
+# Public site assets
+public/

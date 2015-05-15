@@ -1,0 +1,18 @@
+<template name="postItem">
+	<div class="post">
+		<!--<img class="postImage">-->
+		<div class="container {{type}}">
+			<div class="main writing">
+			<h2>
+				{{#if noLink}}
+					<a href="{{pathFor 'postPage'}}">{{title}}</a>
+				{{else}}
+					<a href="{{url}}" target="_blank">{{title}}</a>
+				{{/if}}
+			</h2>
+			<small class="date">{{niceDate}}</small>
+			{{#markdown}}{{content}}{{/markdown}}
+			</div>
+		</div>
+	</div>
+</template>

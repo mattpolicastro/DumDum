@@ -1,0 +1,20 @@
+<template name="postsList">
+<div class="yield">
+	<div id="lede" class="main">
+		<h1>Posts</h1>
+		<p>Regrettable phrasing.</p>
+	</div>
+
+	{{#each posts}}
+		{{> postItem}}
+	{{/each}}
+	
+	{{#if nextPath}}
+		<a class="load-more" href="{{nextPath}}">Load more</a>
+	{{else}}
+		{{#unless ready}}
+			{{> spinner}}
+		{{/unless}}
+	{{/if}}
+</div>
+</template>
