@@ -1,9 +1,5 @@
 Meteor.publish('posts', function(options){
-	check(options, {
-		sort: Object,
-		limit: Number
-	});
-	return Posts.find({}, {fields: {title: 1, slug: 1, published: 1, content: 1}}, options);
+	return Posts.find({}, options);
 });
 
 Meteor.publish('singlePost', function(slug) {
